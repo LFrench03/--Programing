@@ -2,7 +2,7 @@
 Here you'll see some theory, exercises, templates, works and other cool stufs:
 <r>
 
-#Languages:
+# Languages:
 * Python
 * R
 * LaTeX
