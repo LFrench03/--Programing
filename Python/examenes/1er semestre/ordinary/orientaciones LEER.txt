@@ -1,0 +1,14 @@
+Quiero jugar un juego, vivir o morir, tú decides.
+Al descomprimir este documento te encontraras ademas de este archivo de texto 2 archivos mas, un archivo llamado prueba_normal.ipynb y un comprimido llamado prueba_facil.zip, puedes elegir cualquiera de las dos opciones, claro, hacer la prueba facil tendra un costo
+Si decides hacer la prueba normal, adelante, si has estudiado lograras pasarla sin lugar a dudas, pero si no has estudiado lo suficiente, quizas te cueste un poco de trabajo
+Si decides tomar la via facil es muy sencillo, solo necesitas adivinar el password del comprimido que contiene la 2da prueba, o bueno.. adivinarlo no, dado que el password no es mas que la expresion regular que hace match con los numeros telefonicos validos en cuba. Para los efectos de esta prueba un numero de telefono movil es valido si:
+    comienza con: +535, 535, +5 o 5
+    luego sigue un digito que puede ser el 2, el 5, el 6 o el 8
+    y luego siguen 6 digitos cualesquiera
+Cuidado, hay muchas formas de hacer una expresion regular, asi que debes encontrar la adecuada, como pista te puedo decir que es una de las mas cortas
+Ten en cuenta que si dedicas mucho tiempo a resolver esto y no lo logras quizas sea muy tarde si decides intentarlo con la prueba normal, tic tac.. tic tac el tiempo corre, vivir o morir, tu decides
+
+Una vez terminada la prueba, cambiale el numbre al ipynb donde trabajaste y ponle tu nombre completo, llama al profesor y asegurate de que el lo copie en su memoria
+
+PD: ojo con intentar cualquier variante de fraude durante la prueba, al que se le atrape en esto no solo esta suspenso automaticamente sino que no tiene derecho a la 2da oportunidad, va directo a Re
+PD2: suerte :)
