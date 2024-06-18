@@ -1,7 +1,7 @@
-## Working with $\textit{\underline{Streamlit}}$
+## Working with Streamlit
 
 <r>
 
 Python module for app webs with data. Really interesting. Take a look some of these buildings. :)
 
-![](IMG/streamlit_logo.png)
+![](img/streamlit_logo.png)
