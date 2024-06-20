@@ -19,3 +19,5 @@ Test data works. Here we're gonna use:
 ![](IMG/numpy_logo.png)
 
 ![](IMG/matplotlib_logo.png)
+
+![](IMG/seaborn.png)
