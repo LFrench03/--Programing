@@ -1,2 +1,0 @@
-\beamer@sectionintoc {1}{Lists in Beamer}{3}{0}{1}
-\beamer@sectionintoc {2}{Blocks in Beamer}{4}{0}{2}
