@@ -2,4 +2,7 @@ Repositorios
 Python/env
 *.mp4
 *.mp3
+*.log
+*.RData
 .Rproj.user
+multimedia

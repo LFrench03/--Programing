@@ -1,0 +1,60 @@
+.aligncenter {
+  text-align: center;
+}
+.exercise {
+  background-color: green;
+  color: white;	
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.example{
+  color: black;
+  background-color: gray;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.languagehtml{
+ color: orange; 
+ display: inline;
+  
+}
+
+.languagelatex{
+  color:green;
+  display:inline;
+}
+
+.definition{
+  color: blue;
+  display:inline;
+}
+
+.important{
+  color: crimson;
+}
+
+.box{
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 2px solid blue ;
+  opacity: 0.5;
+}
+
+.dem {
+  background-color: gray ;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.75em;
+}
+
+.r-code{
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 2px solid gray;
+  background-color: #F2F2F2;
+  font-size: 0.7em
+}
