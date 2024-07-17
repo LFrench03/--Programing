@@ -6,7 +6,7 @@ subtitle: "R Markdown"
 output:
   ioslides_presentation:
     widescreen: true
-    css: Rmd CSS.css
+    css: style.css
     logo: img/LogoRStudio.png
 ---
 

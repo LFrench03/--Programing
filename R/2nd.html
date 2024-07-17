@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Introduction</title>
+  <title>Tipos de Datos</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -20,9 +20,8 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Introduction',
-                        subtitle: 'R Markdown',
-                useBuilds: true,
+                title: 'Tipos de Datos',
+                        useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
         enableTouch: true,
@@ -32,7 +31,7 @@
       // Author information
       presenters: [
             {
-        name:  'First Steps' ,
+        name:  'R Markdown' ,
         company: '',
         gplus: '',
         twitter: '',
@@ -3269,1267 +3268,555 @@ font-size: 0.7em
         <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
-      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      
       <p data-config-presenter><!-- populated from slide_config.json --></p>
             <p style="margin-top: 6px; margin-left: -2px;">2024-07-10</p>
           </hgroup>
   </slide>
 
-<slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Introduction</h2></hgroup><article  id="introduction">
+<slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>R</h2></hgroup><article  id="r">
 
-</article></slide><slide class=""><hgroup><h2><l class="defintion">Markdown </l></h2></hgroup><article  id="markdown">
+</article></slide><slide class=""><hgroup><h2>Calculadora</h2></hgroup><article  id="calculadora">
 
-<p><l class="definition">R Markdown. </l> Es un tipo de fichero en el cual podemos intercalar sin problema alguno texto, código y fórmulas matemáticas.</p>
+<p><l class="definition">R </l> es una calculadora asi que se pueden aplicar todas las operaciones aritmeticas en el sin problemas.</p>
 
-<p>En lo referente a la creación y composición de este tipo de ficheros, el documento <a href='https://en.support.wordpress.com/markdown-quick-reference/' title=''><em>Markdown Quick Reference</em></a> y la <a href='http://shiny.rstudio.com/images/rm-cheatsheet.pdf.zip.' title=''>chuleta</a> de R Markdown deberían ser bastante utiles como herramientas.</p>
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Vectores</h2></hgroup><article  id="vectores">
 
-</article></slide><slide class=""><hgroup><h2>Tablas</h2></hgroup><article  id="tablas">
+</article></slide><slide class=""><hgroup><h2>Variables</h2></hgroup><article  id="variables">
 
-<pre >Ejemplo de tabla usando la sintaxis de Markdown:
-|Esto es |  una |  tabla  |
-|--------|------|---------|
-|lo juro |es una| tabla   |</pre>
-
-<p>Y se deberia ver asi:</p>
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Esto es</th>
-<th align="left">una</th>
-<th align="left">tabla</th>
-</tr>
-<tr class="odd">
-<td align="left">lo juro</td>
-<td align="left">es una</td>
-<td align="left">tabla</td>
-</tr>
-</table>
-
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Multimedia</h2></hgroup><article  id="multimedia">
-
-</article></slide><slide class=""><hgroup><h2><l class= "languagehtml">HTML </l></h2></hgroup><article  id="html">
-
-<p>En este aspecto resulta particularmente uti la utilizacion de la sintaxis de <l class= "languagehtml">HTML </l> y <l class="definition">CSS </l> para la correcta introduccion de multimedia y centrado cuando se desea renderizar como <l class= "languagehtml">HTML </l> document.</p>
-
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Imagenes</h2></hgroup><article  id="imagenes">
-
-</article></slide><slide class=""><hgroup><h2>Ejemplo</h2></hgroup><article  id="ejemplo">
-
-<pre >Usando Markdown
-&lt;div class=&quot;aligncenter&quot;&gt;
-![](img/logo.jpeg)
-&lt;/div&gt;
-or
-
-Usando HTML
-&lt;div class=&quot;aligncenter&quot;&gt;
-&lt;img src=img/logo.jpeg alt=&quot;img&quot; width=300px height=200px&gt;
-&lt;/div&gt;</pre>
-
-</article></slide><slide class=""><hgroup><h2>Resultado <l class="definition">Markdown</l></h2></hgroup><article  id="resultado-markdown">
-
-<p>Usando Markdown</p>
-
-<div class="aligncenter">
-<img src='data:image/jpeg;base64,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' title=''/></div>
-
-</article></slide><slide class=""><hgroup><h2>Resultado <l class="languagehtml">HTML</l></h2></hgroup><article  id="resultado-html">
-
-<div class="aligncenter">
-<p><img src="data:image/jpeg;base64,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" alt="img" width="300px" height="200px"/></p></div>
-
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Video</h2></hgroup><article  id="video">
-
-</article></slide><slide class=""><hgroup><h2>Ejemplo</h2></hgroup><article  id="ejemplo-1">
-
-<pre >Usando HTML
-&lt;div class=&quot;aligncenter&quot;&gt;
-&lt;video width=500px height=400 controls autoplay muted loop&gt;
-  &lt;source src=&quot;img/videotest.mp4&quot;&gt;
-&lt;/video&gt;</pre>
-
-</article></slide><slide class=""><hgroup><h2>Resultado</h2></hgroup><article  id="resultado">
-
-<div class="aligncenter">
-
-
-<video width=500px height=400 controls autoplay muted loop>
-
-<source src="img/videotest.mp4">
-
-</video>
-
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Math Format</h2></hgroup><article  id="math-format">
-
-</article></slide><slide class=""><hgroup><h2>Cómo escribir</h2></hgroup><article  id="cómo-escribir">
-
-<p>Para escribir fórmulas matemáticas bien formateadas utilizaremos la sintaxis \(\LaTeX\)</p>
+<p>Las <l class="definition">variables </l> son, en espacio en la computadora donde guardamos un objeto.</p>
 
 <ul>
-<li>Para tener ecuaciones o fórmulas en el mismo párrafo, escribimos nuestro código entre dos símbolos de dólar: <code>$</code>código<code>$</code></li>
-<li>Si queremos tener ecuaciones o fórmulas centradas en un párrafo aparte, escribimos nuestro código entre dos dobles símbolos de dólar: <code>$$</code>código<code>$$</code></li>
+<li>Se asignan por medio de los operadores (<code>&lt;- &amp;  =</code>)</li>
 </ul>
 
-<p><l class="important">¡Cuidado!</l> Al escribir una fórmula de la forma indicada anteriormente o simplemente texto en R Markdown, los espacios en blanco son completamente ignorados. RStudio solamente añade los espacios en blanco a partir del significado lógico de sus elementos.</p>
+</article></slide><slide class=""><hgroup><h2>Tipos de datos en R</h2></hgroup><article  id="tipos-de-datos-en-r">
 
-</article></slide><slide class=""><hgroup><h2>Símbolos</h2></hgroup><article  id="símbolos">
-
-<p>Hay muchísimos símbolos matemáticos que puedes escribirse con la sintaxis \(\LaTeX\). En el ejemplo anterior ya os hemos mostrado unos pocos. En este tema, nosotros solo veremos los más utilizados.</p>
-
-<p>Para quien quiera ir más allá, aquí os dejamos un <a href='http://www.ptep-online.com/ctan/symbols.pdf' title=''>documento muy útil</a> con gran cantidad de símbolos de \(\LaTeX\).</p>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Básico</h2></hgroup><article  id="símbolos-matemáticos---básico">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Suma</td>
-<td align="left"><code>+</code></td>
-<td align="left">\(+\)</td>
-</tr>
-<tr class="even">
-<td align="left">Resta</td>
-<td align="left"><code>-</code></td>
-<td align="left">\(-\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Producto</td>
-<td align="left"><code>\cdot</code></td>
-<td align="left">\(\cdot\)</td>
-</tr>
-<tr class="even">
-<td align="left">Producto</td>
-<td align="left"><code>\times</code></td>
-<td align="left">\(\times\)</td>
-</tr>
-<tr class="odd">
-<td align="left">División</td>
-<td align="left"><code>\div</code></td>
-<td align="left">\(\div\)</td>
-</tr>
-<tr class="even">
-<td align="left">Potencia</td>
-<td align="left"><code>a^{x}</code></td>
-<td align="left">\(a^{x}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Subíndice</td>
-<td align="left"><code>a_{i}</code></td>
-<td align="left">\(a_{i}\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Básico</h2></hgroup><article  id="símbolos-matemáticos---básico-1">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Fracción</td>
-<td align="left"><code>\frac{a}{b}</code></td>
-<td align="left">\(\frac{a}{b}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Más menos</td>
-<td align="left"><code>\pm</code></td>
-<td align="left">\(\pm\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Raíz n-ésima</td>
-<td align="left"><code>\sqrt[n]{x}</code></td>
-<td align="left">\(\sqrt[n]{x}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Unión</td>
-<td align="left"><code>cup</code></td>
-<td align="left">\(\cup\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Intersección</td>
-<td align="left"><code>\cap</code></td>
-<td align="left">\(\cap\)</td>
-</tr>
-<tr class="even">
-<td align="left">OR lógico</td>
-<td align="left"><code>\vee</code></td>
-<td align="left">\(\vee\)</td>
-</tr>
-<tr class="odd">
-<td align="left">AND lógico</td>
-<td align="left"><code>\wedge</code></td>
-<td align="left">\(\wedge\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Relaciones</h2></hgroup><article  id="símbolos-matemáticos---relaciones">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Igual</td>
-<td align="left"><code>=</code></td>
-<td align="left">\(=\)</td>
-</tr>
-<tr class="even">
-<td align="left">Aproximado</td>
-<td align="left"><code>\approx</code></td>
-<td align="left">\(\approx\)</td>
-</tr>
-<tr class="odd">
-<td align="left">No igual</td>
-<td align="left"><code>\ne</code></td>
-<td align="left">\(\ne\)</td>
-</tr>
-<tr class="even">
-<td align="left">Mayor que</td>
-<td align="left"><code>&gt;</code></td>
-<td align="left">\(&gt;\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Menor que</td>
-<td align="left"><code>&lt;</code></td>
-<td align="left">\(&lt;\)</td>
-</tr>
-<tr class="even">
-<td align="left">Mayor o igual que</td>
-<td align="left"><code>\ge</code></td>
-<td align="left">\(\ge\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Menor o igual que</td>
-<td align="left"><code>\le</code></td>
-<td align="left">\(\le\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Operadores</h2></hgroup><article  id="símbolos-matemáticos---operadores">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Sumatorio</td>
-<td align="left"><code>\sum_{i=0}^{n}</code></td>
-<td align="left">\(\sum_{i=0}^{n}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Productorio</td>
-<td align="left"><code>\prod_{i=0}^{n}</code></td>
-<td align="left">\(\prod_{i=0}^{n}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Integral</td>
-<td align="left"><code>\int_{a}^{b}</code></td>
-<td align="left">\(\int_{a}^{b}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Unión (grande)</td>
-<td align="left"><code>\bigcup</code></td>
-<td align="left">\(\bigcup\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Intersección (grande)</td>
-<td align="left"><code>\bigcap</code></td>
-<td align="left">\(\bigcap\)</td>
-</tr>
-<tr class="even">
-<td align="left">OR lógico (grande)</td>
-<td align="left"><code>\bigvee</code></td>
-<td align="left">\(\bigvee\)</td>
-</tr>
-<tr class="odd">
-<td align="left">AND lógico (grande)</td>
-<td align="left"><code>\bigwedge</code></td>
-<td align="left">\(\bigwedge\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Delimitadores</h2></hgroup><article  id="símbolos-matemáticos---delimitadores">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Paréntesis</td>
-<td align="left"><code>()</code></td>
-<td align="left">\((\ )\)</td>
-</tr>
-<tr class="even">
-<td align="left">Corchetes</td>
-<td align="left"><code>[]</code></td>
-<td align="left">\([\ ]\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Llaves</td>
-<td align="left"><code>\{ \}</code></td>
-<td align="left">\(\{\ \}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Diamante</td>
-<td align="left"><code>\langle \rangle</code></td>
-<td align="left">\(\langle\ \rangle\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Parte entera por defecto</td>
-<td align="left"><code>\lfloor \rfloor</code></td>
-<td align="left">\(\lfloor\  \rfloor\)</td>
-</tr>
-<tr class="even">
-<td align="left">Parte entera por exceso</td>
-<td align="left"><code>\lceil \rceil</code></td>
-<td align="left">\(\lceil\ \rceil\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Espacio en blanco</td>
-<td align="left"><code>hola\ caracola</code></td>
-<td align="left">\(hola\ caracola\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Letras griegas</h2></hgroup><article  id="símbolos-matemáticos---letras-griegas">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Alpha</td>
-<td align="left"><code>\alpha</code></td>
-<td align="left">\(\alpha\)</td>
-</tr>
-<tr class="even">
-<td align="left">Beta</td>
-<td align="left"><code>\beta</code></td>
-<td align="left">\(\beta\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Gamma</td>
-<td align="left"><code>\gamma \Gamma</code></td>
-<td align="left">\(\gamma\  \Gamma\)</td>
-</tr>
-<tr class="even">
-<td align="left">Delta</td>
-<td align="left"><code>\delta \Delta</code></td>
-<td align="left">\(\delta\  \Delta\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Epsilon</td>
-<td align="left"><code>\epsilon</code></td>
-<td align="left">\(\epsilon\)</td>
-</tr>
-<tr class="even">
-<td align="left">Epsilon</td>
-<td align="left"><code>\varepsilon</code></td>
-<td align="left">\(\varepsilon\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Zeta</td>
-<td align="left"><code>\zeta</code></td>
-<td align="left">\(\zeta\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Letras griegas</h2></hgroup><article  id="símbolos-matemáticos---letras-griegas-1">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Eta</td>
-<td align="left"><code>\eta</code></td>
-<td align="left">\(\eta\)</td>
-</tr>
-<tr class="even">
-<td align="left">Theta</td>
-<td align="left"><code>\theta \Theta</code></td>
-<td align="left">\(\theta\ \Theta\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Kappa</td>
-<td align="left"><code>\kappa</code></td>
-<td align="left">\(\kappa\)</td>
-</tr>
-<tr class="even">
-<td align="left">Lambda</td>
-<td align="left"><code>\lambda \Lambda</code></td>
-<td align="left">\(\lambda\  \Lambda\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Mu</td>
-<td align="left"><code>\mu</code></td>
-<td align="left">\(\mu\)</td>
-</tr>
-<tr class="even">
-<td align="left">Nu</td>
-<td align="left"><code>\nu</code></td>
-<td align="left">\(\nu\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Xi</td>
-<td align="left"><code>\xi \Xi</code></td>
-<td align="left">\(\xi\ \Xi\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Letras griegas</h2></hgroup><article  id="símbolos-matemáticos---letras-griegas-2">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Pi</td>
-<td align="left"><code>\pi \Pi</code></td>
-<td align="left">\(\pi\ \Pi\)</td>
-</tr>
-<tr class="even">
-<td align="left">Rho</td>
-<td align="left"><code>\rho</code></td>
-<td align="left">\(\rho\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Sigma</td>
-<td align="left"><code>\sigma \Sigma</code></td>
-<td align="left">\(\sigma\ \Sigma\)</td>
-</tr>
-<tr class="even">
-<td align="left">Tau</td>
-<td align="left"><code>\tau</code></td>
-<td align="left">\(\tau\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Upsilon</td>
-<td align="left"><code>\upsilon \Upsilon</code></td>
-<td align="left">\(\upsilon\ \Upsilon\)</td>
-</tr>
-<tr class="even">
-<td align="left">Phi</td>
-<td align="left"><code>\phi \Phi</code></td>
-<td align="left">\(\phi\ \Phi\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Phi</td>
-<td align="left"><code>\varphi</code></td>
-<td align="left">\(\varphi\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Letras griegas</h2></hgroup><article  id="símbolos-matemáticos---letras-griegas-3">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Chi</td>
-<td align="left"><code>\chi</code></td>
-<td align="left">\(\chi\)</td>
-</tr>
-<tr class="even">
-<td align="left">Psi</td>
-<td align="left"><code>\psi \Psi</code></td>
-<td align="left">\(\psi\ \Psi\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Omega</td>
-<td align="left"><code>\omega \Omega</code></td>
-<td align="left">\(\omega\ \Omega\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Acentos matemáticos</h2></hgroup><article  id="símbolos-matemáticos---acentos-matemáticos">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Gorrito</td>
-<td align="left"><code>\hat{x}</code></td>
-<td align="left">\(\hat{x}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Barra</td>
-<td align="left"><code>\bar{x}</code></td>
-<td align="left">\(\bar{x}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Punto 1</td>
-<td align="left"><code>\dot{x}</code></td>
-<td align="left">\(\dot{x}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Punto 2</td>
-<td align="left"><code>\ddot{x}</code></td>
-<td align="left">\(\ddot{x}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Punto 3</td>
-<td align="left"><code>\dddot{x}</code></td>
-<td align="left">\(\dddot{x}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Tilde</td>
-<td align="left"><code>\tilde{x}</code></td>
-<td align="left">\(\tilde{x}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Vector</td>
-<td align="left"><code>\vec{x}</code></td>
-<td align="left">\(\vec{x}\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Acentos expansibles</h2></hgroup><article  id="símbolos-matemáticos---acentos-expansibles">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Gorrito</td>
-<td align="left"><code>\widehat{xyz}</code></td>
-<td align="left">\(\widehat{xyz}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Barra</td>
-<td align="left"><code>\overline{xyz}</code></td>
-<td align="left">\(\overline{xyz}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Subrayado</td>
-<td align="left"><code>\underline{xyz}</code></td>
-<td align="left">\(\underline{xyz}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Llave superior</td>
-<td align="left"><code>\overbrace{xyz}</code></td>
-<td align="left">\(\overbrace{xyz}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Llave inferior</td>
-<td align="left"><code>\underbrace{xyz}</code></td>
-<td align="left">\(\underbrace{xyz}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Tilde</td>
-<td align="left"><code>\widetilde{xyz}</code></td>
-<td align="left">\(\widetilde{xyz}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Vector</td>
-<td align="left"><code>\overrightarrow{xyz}</code></td>
-<td align="left">\(\overrightarrow{xyz}\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Flechas</h2></hgroup><article  id="símbolos-matemáticos---flechas">
-
-<table class = 'rmdtable'>
-<col width="25.000000%" />
-<col width="36.111111%" />
-<col width="38.888889%" />
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Simple</td>
-<td align="left"><code>\leftarrow \rightarrow</code></td>
-<td align="left">\(\leftarrow\ \rightarrow\)</td>
-</tr>
-<tr class="even">
-<td align="left">Doble</td>
-<td align="left"><code>\Leftarrow \Rightarrow</code></td>
-<td align="left">\(\Leftarrow\ \Rightarrow\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Simple larga</td>
-<td align="left"><code>\longleftarrow \longrightarrow</code></td>
-<td align="left">\(\longleftarrow\  \longrightarrow\)</td>
-</tr>
-<tr class="even">
-<td align="left">Doble larga</td>
-<td align="left"><code>\Longleftarrow \Longrightarrow</code></td>
-<td align="left">\(\Longleftarrow\ \Longrightarrow\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Doble sentido simple</td>
-<td align="left"><code>\leftrightarrow</code></td>
-<td align="left">\(\leftrightarrow\)</td>
-</tr>
-<tr class="even">
-<td align="left">Doble sentido doble</td>
-<td align="left"><code>\Leftrightarrow</code></td>
-<td align="left">\(\Leftrightarrow\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Flechas</h2></hgroup><article  id="símbolos-matemáticos---flechas-1">
-
-<table class = 'rmdtable'>
-<col width="37.837838%" />
-<col width="31.081081%" />
-<col width="31.081081%" />
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Doble sentido larga simple</td>
-<td align="left"><code>\longleftrightarrow</code></td>
-<td align="left">\(\longleftrightarrow\)</td>
-</tr>
-<tr class="even">
-<td align="left">Doble sentido larga doble</td>
-<td align="left"><code>\Longleftrightarrow</code></td>
-<td align="left">\(\Longleftrightarrow\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Mapea</td>
-<td align="left"><code>\mapsto</code></td>
-<td align="left">\(\mapsto\)</td>
-</tr>
-<tr class="even">
-<td align="left">Arriba</td>
-<td align="left"><code>\uparrow</code></td>
-<td align="left">\(\uparrow\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Abajo</td>
-<td align="left"><code>\downarrow</code></td>
-<td align="left">\(\downarrow\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Funciones</h2></hgroup><article  id="símbolos-matemáticos---funciones">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Seno</td>
-<td align="left"><code>\sin</code></td>
-<td align="left">\(\sin\)</td>
-</tr>
-<tr class="even">
-<td align="left">Coseno</td>
-<td align="left"><code>\cos</code></td>
-<td align="left">\(\cos\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Tangente</td>
-<td align="left"><code>\tan</code></td>
-<td align="left">\(\tan\)</td>
-</tr>
-<tr class="even">
-<td align="left">Arcoseno</td>
-<td align="left"><code>\arcsin</code></td>
-<td align="left">\(\arcsin\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Arcocoseno</td>
-<td align="left"><code>\arccos</code></td>
-<td align="left">\(\arccos\)</td>
-</tr>
-<tr class="even">
-<td align="left">Arcotangente</td>
-<td align="left"><code>\arctan</code></td>
-<td align="left">\(\arctan\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Funciones</h2></hgroup><article  id="símbolos-matemáticos---funciones-1">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Exponencial</td>
-<td align="left"><code>\exp</code></td>
-<td align="left">\(\exp\)</td>
-</tr>
-<tr class="even">
-<td align="left">Logaritmo</td>
-<td align="left"><code>\log</code></td>
-<td align="left">\(\log\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Logaritmo neperiano</td>
-<td align="left"><code>\ln</code></td>
-<td align="left">\(\ln\)</td>
-</tr>
-<tr class="even">
-<td align="left">Máximo</td>
-<td align="left"><code>\max</code></td>
-<td align="left">\(\max\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Mínimo</td>
-<td align="left"><code>\min</code></td>
-<td align="left">\(\min\)</td>
-</tr>
-<tr class="even">
-<td align="left">Límite</td>
-<td align="left"><code>\lim</code></td>
-<td align="left">\(\lim\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Funciones</h2></hgroup><article  id="símbolos-matemáticos---funciones-2">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Supremo</td>
-<td align="left"><code>\sup</code></td>
-<td align="left">\(\sup\)</td>
-</tr>
-<tr class="even">
-<td align="left">Ínfimo</td>
-<td align="left"><code>\inf</code></td>
-<td align="left">\(\inf\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Determinante</td>
-<td align="left"><code>\det</code></td>
-<td align="left">\(\det\)</td>
-</tr>
-<tr class="even">
-<td align="left">Argumento</td>
-<td align="left"><code>\arg</code></td>
-<td align="left">\(\arg\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Otros</h2></hgroup><article  id="símbolos-matemáticos---otros">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Puntos suspensivos bajos</td>
-<td align="left"><code>\ldots</code></td>
-<td align="left">\(\ldots\)</td>
-</tr>
-<tr class="even">
-<td align="left">Puntos suspensivos centrados</td>
-<td align="left"><code>\cdots</code></td>
-<td align="left">\(\cdots\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Puntos suspensivos verticales</td>
-<td align="left"><code>\vdots</code></td>
-<td align="left">\(\vdots\)</td>
-</tr>
-<tr class="even">
-<td align="left">Puntos suspensivos diagonales</td>
-<td align="left"><code>\ddots</code></td>
-<td align="left">\(\ddots\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Cuantificador existencial</td>
-<td align="left"><code>\exists</code></td>
-<td align="left">\(\exists\)</td>
-</tr>
-<tr class="even">
-<td align="left">Cuantificador universal</td>
-<td align="left"><code>\forall</code></td>
-<td align="left">\(\forall\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Infinito</td>
-<td align="left"><code>\infty</code></td>
-<td align="left">\(\infty\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Otros</h2></hgroup><article  id="símbolos-matemáticos---otros-1">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Aleph</td>
-<td align="left"><code>\aleph</code></td>
-<td align="left">\(\aleph\)</td>
-</tr>
-<tr class="even">
-<td align="left">Conjunto vacío</td>
-<td align="left"><code>\emptyset</code></td>
-<td align="left">\(\emptyset\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Negación</td>
-<td align="left"><code>\neg</code></td>
-<td align="left">\(\neg\)</td>
-</tr>
-<tr class="even">
-<td align="left">Barra invertida</td>
-<td align="left"><code>\backslash</code></td>
-<td align="left">\(\backslash\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Dollar</td>
-<td align="left"><code>\$</code></td>
-<td align="left">\(\$\)</td>
-</tr>
-<tr class="even">
-<td align="left">Porcentaje</td>
-<td align="left"><code>\%</code></td>
-<td align="left">\(\%\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Parcial</td>
-<td align="left"><code>\partial</code></td>
-<td align="left">\(\partial\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Símbolos matemáticos - Tipos de letra</h2></hgroup><article  id="símbolos-matemáticos---tipos-de-letra">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left">Negrita</td>
-<td align="left"><code>\mathbf{palabra}</code></td>
-<td align="left">\(\mathbf{palabra}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Negrita</td>
-<td align="left"><code>\boldsymbol{palabra}</code></td>
-<td align="left">\(\boldsymbol{palabra}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Negrita de pizarra</td>
-<td align="left"><code>\mathbb{NZQRC}</code></td>
-<td align="left">\(\mathbb{NZQRC}\)</td>
-</tr>
-<tr class="even">
-<td align="left">Caligráfica</td>
-<td align="left"><code>\mathcal{NZQRC}</code></td>
-<td align="left">\(\mathcal{NZQRC}\)</td>
-</tr>
-<tr class="odd">
-<td align="left">Gótica</td>
-<td align="left"><code>\mathfrak{NZQRC}</code></td>
-<td align="left">\(\mathfrak{NZQRC}\)</td>
-</tr>
-</table>
-
-</article></slide><slide class=""><hgroup><h2>Observaciones</h2></hgroup><article  id="observaciones">
+<p>Un <strong>vector</strong> es una secuencia ordenada de datos. <code>R</code> dispone de muchos tipos de datos, por ejemplo:</p>
 
 <ul>
-<li><p>A la hora de componer en el interior de un párrafo una fracción, existen dos formas: adaptada al tamaño del texto,<code>$\frac{a}{b}$</code>, que resulta en \(\frac{a}{b}\); o a tamaño real, <code>$\dfrac{a}{b}$</code>, que da lugar a \(\dfrac{a}{b}\).</p></li>
-<li><p>Podemos especificar que los delimitadores se adapten a la altura de la expresión que envuelven utilizando <code>\left</code> y <code>\right</code>. Observad el cambio en el siguiente ejemplo: <code>$(\dfrac{a}{b})$</code> y <code>$\left(\dfrac{a}{b}\right)$</code> producen, respectivamente \((\dfrac{a}{b})\) y \(\left(\dfrac{a}{b}\right)\).</p></li>
+<li><code>logical</code>: lógicos (<code>TRUE</code> o <code>FALSE</code>)</li>
+<li><code>integer</code>: números enteros, \(\mathbb Z\)</li>
+<li><code>numeric</code>: números reales, \(\mathbb R\)</li>
+<li><code>complex</code>: números complejos, \(\mathbb C\)</li>
+<li><code>character</code>: palabras</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Matrices</h2></hgroup><article  id="matrices">
+<p>En los vectores de <code>R</code>, todos sus objetos han de ser del mismo tipo: todos números, todos palabras, etc. Cuando queramos usar vectores formados por objetos de diferentes tipos, tendremos que usar <strong>listas generalizadas</strong>, <code>lists</code> que veremos al final del tema.</p>
 
-<p><code>$$\begin{matrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23} \end{matrix}$$</code></p>
-
-<p>\[\begin{matrix}
-a_{11} &amp; a_{12} &amp; a_{13}\\
-a_{21} &amp; a_{22} &amp; a_{23}
-\end{matrix}\]</p>
-
-<p><code>$$\begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23} \end{pmatrix}$$</code></p>
-
-<p>\[\begin{pmatrix}
-a_{11} &amp; a_{12} &amp; a_{13}\\
-a_{21} &amp; a_{22} &amp; a_{23}
-\end{pmatrix}\]</p>
-
-</article></slide><slide class=""><hgroup><h2>Matrices</h2></hgroup><article  id="matrices-1">
-
-<p><code>$$\begin{vmatrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23} \end{vmatrix}$$</code></p>
-
-<p>\[\begin{vmatrix}
-a_{11} &amp; a_{12} &amp; a_{13}\\
-a_{21} &amp; a_{22} &amp; a_{23}
-\end{vmatrix}\]</p>
-
-<p><code>$$\begin{bmatrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23} \end{bmatrix}$$</code></p>
-
-<p>\[\begin{bmatrix}
-a_{11} &amp; a_{12} &amp; a_{13}\\
-a_{21} &amp; a_{22} &amp; a_{23}
-\end{bmatrix}\]</p>
-
-</article></slide><slide class=""><hgroup><h2>Matrices</h2></hgroup><article  id="matrices-2">
-
-<p><code>$$\begin{Bmatrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23} \end{Bmatrix}$$</code></p>
-
-<p>\[\begin{Bmatrix}
-a_{11} &amp; a_{12} &amp; a_{13}\\
-a_{21} &amp; a_{22} &amp; a_{23}
-\end{Bmatrix}\]</p>
-
-<p><code>$$\begin{Vmatrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23} \end{Vmatrix}$$</code></p>
-
-<p>\[\begin{Vmatrix}
-a_{11} &amp; a_{12} &amp; a_{13}\\
-a_{21} &amp; a_{22} &amp; a_{23}
-\end{Vmatrix}\]</p>
-
-</article></slide><slide class=""><hgroup><h2>Sistema de ecuaciones</h2></hgroup><article  id="sistema-de-ecuaciones">
-
-<p><code>\begin{array}{l}\end{array}</code> nos produce una tabla alineada a la izquierda. El hecho de introducir el código <code>\left. \right.</code> hace que el delimitador respectivo no aparezca.</p>
-
-<p><code>$$\left.\begin{array}{l} ax+by=c\\ ex-fy=g \end{array}\right\}$$</code></p>
-
-<p>\[\left.\begin{array}{l}
-ax+by=c\\
-ex-fy=g
-\end{array}\right\}\]</p>
-
-<p><code>$$|x|=\left\{\begin{array}{l} -x &amp; \text{si }x\le 0\\ x &amp; \text{si }x\ge 0 \end{array}\right.$$</code></p>
-
-<p>\[|x|=\left\{\begin{array}{l}
--x &amp; \text{si }x\le 0\\
-x &amp; \text{si }x\ge 0
-\end{array}\right.\]</p>
-
-<p>La función <code>text{}</code> nos permite introducir texto en fórmulas matemátic## Símbolos matemáticos - Básico</p>
-
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Chunks/Celdas de codigo</h2></hgroup><article  id="chunksceldas-de-codigo">
-
-</article></slide><slide class=""><hgroup><h2>Chunks de R</h2></hgroup><article  id="chunks-de-r">
-
-<p><l class="definition">Chunk.</l> Bloque de código.</p>
-
-<p>Los bloques de código de R dentro de un documento R Markdown se indican de la manera siguiente</p>
-
-<div class="r-code">
-<p>```{r}</p>
-
-<p><code>x = 1+1</code></p>
-
-<p><code>x</code></p>
-
-<p>```</p></div>
-
-<p>que resulta en</p>
-
-<pre class = 'prettyprint lang-r'>x = 1+1
-x</pre>
-
-</article></slide><slide class=""><hgroup><h2>Chunks de R</h2></hgroup><article  id="chunks-de-r-1">
-
-<p>Hay diversas opciones de crear un bloque de código de R:</p>
+</article></slide><slide class=""><hgroup><h2>Básico</h2></hgroup><article  id="básico">
 
 <ul>
-<li>Ir al menú desplegable de &ldquo;Chunks&rdquo; y seleccionar el de R</li>
-<li>Introducir manualmente</li>
-<li>Alt + Command + I (para Mac) o Alt + Control + I (para Windows)</li>
+<li><code>c()</code>: para definir un vector</li>
+<li><code>scan()</code>: para definir un vector</li>
+<li><code>fix(x)</code>: para modificar visualmente el vector \(x\)</li>
+<li><code>rep(a,n)</code>: para definir un vector constante que contiene el dato \(a\) repetido \(n\) veces</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Chunks de R</h2></hgroup><article  id="chunks-de-r-2">
+<pre class = 'prettyprint lang-r'>c(1,2,3)</pre>
 
-<p>A los chunks se les puede poner etiqueta, para así localizarlos de manera más fácil. Por ejemplo</p>
+<pre >## [1] 1 2 3</pre>
 
-<div class="r-code">
-<p>```{r PrimerChunk}</p>
+<pre class = 'prettyprint lang-r'>rep(&quot;Mates&quot;,7)</pre>
 
-<p><code>x = 1+2+3</code></p>
+<pre >## [1] &quot;Mates&quot; &quot;Mates&quot; &quot;Mates&quot; &quot;Mates&quot; &quot;Mates&quot; &quot;Mates&quot; &quot;Mates&quot;</pre>
 
-<p>```</p></div>
+<pre class = 'prettyprint lang-r'>vect&lt;-c(1,2,8,5)</pre>
 
+</article></slide><slide class=""><hgroup><h2>Progresiones y Secuencias</h2></hgroup><article  id="progresiones-y-secuencias">
 
+<p>Una progresión aritmética es una sucesión de números tales que la <strong>diferencia</strong>, \(d\), de cualquier par de términos sucesivos de la secuencia es constante. \[a_n = a_1 + (n-1)\cdot d\]</p>
 
-<div class="r-code">
-<p>```{r SegundoChunk}</p>
+<ul>
+<li><code>seq(a,b,by=d)</code>: para generar una <a href='https://es.wikipedia.org/wiki/Progresión_aritmética' title=''>progresión aritmética</a> de diferencia \(d\) que empieza en \(a\) hasta llegar a \(b\)</li>
+<li><code>seq(a,b, length.out=n)</code>: define progresión aritmética de longitud \(n\) que va de \(a\) a \(b\) con diferencia \(d\). Por tanto \(d=(b-a)/(n-1)\)</li>
+<li><code>seq(a,by=d, length.out=n)</code>: define la progresión aritmética de longitud \(n\) y diferencia \(d\) que empieza en \(a\)</li>
+<li><code>a:b</code>: define la secuencia de números <strong>enteros</strong> (\(\mathbb{Z}\)) consecutivos entre dos números \(a\) y \(b\)</li>
+</ul>
 
-<p><code>y = 1*2*3</code></p>
+</article></slide><slide class=""><hgroup><h2>Funciones</h2></hgroup><article  id="funciones">
 
-<p>```</p></div>
+<p>Cuando queremos aplicar una función a cada uno de los elementos de un vector de datos, la función <code>sapply</code> nos ahorra tener que programar con bucles en <code>R</code>:</p>
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks">
+<ul>
+<li><code>sapply(nombre_de_vector,FUN=nombre_de_función)</code>: para aplicar dicha función a todos los elementos del vector</li>
+<li><code>sqrt(x)</code>: calcula un nuevo vector con las raíces cuadradas de cada uno de los elementos del vector \(x\)</li>
+</ul>
 
-<p>La parte entre llaves también puede contener diversos parámetros, separados por comas entre ellos y separados de la etiqueta (o de r, si hemos decidido no poner ninguna).</p>
+</article></slide><slide class=""><hgroup><h2>Funciones</h2></hgroup><article  id="funciones-1">
 
-<p>Estos parámetros determinan el comportamiento del bloque al compilar el documento pulsando el botón <code>Knit</code> situado en la barra superior del área de trabajo.</p>
+<p>Dado un vector de datos \(x\) podemos calcular muchas medidas estadísticas acerca del mismo:</p>
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks-1">
+<ul>
+<li><code>length(x)</code>: calcula la longitud del vector \(x\)</li>
+<li><code>max(x)</code>: calcula el máximo del vector \(x\)</li>
+<li><code>min(x)</code>: calcula el mínimo del vector \(x\)</li>
+<li><code>sum(x)</code>: calcula la suma de las entradas del vector \(x\)</li>
+<li><code>prod(x)</code>: calcula el producto de las entradas del vector \(x\)</li>
+</ul>
 
-<table class = 'rmdtable'>
-<col width="16.666667%" />
-<col width="83.333333%" />
-<tr class="header">
-<th align="left">Código</th>
-<th align="left">Significado</th>
-</tr>
-<tr class="odd">
-<td align="left"><code>echo</code></td>
-<td align="left">Si lo igualamos a <code>TRUE</code>, que es el valor por defecto, estaremos diciendo que queremos que se muestre el código fuente del chunk. En cambio, igualado a <code>FALSE</code>, no se mostrará</td>
-</tr>
-<tr class="even">
-<td align="left"><code>eval</code></td>
-<td align="left">Si lo igualamos a <code>TRUE</code>, que es el valor por defecto, estaremos diciendo que queremos que se evalúe el código. En cambio, igualado a <code>FALSE</code>, no se evaluará</td>
-</tr>
-<tr class="odd">
-<td align="left"><code>message</code></td>
-<td align="left">Nos permite indicar si queremos que se muestren los mensajes que R produce al ejecutar código. Igualado a <code>TRUE</code> se muestran, igualado a <code>FALSE</code> no</td>
-</tr>
-<tr class="even">
-<td align="left"><code>warning</code></td>
-<td align="left">Nos permite indicar si queremos que se muestren los mensajes de advertencia que producen algunas funciones al ejecutarse. Igualado a <code>TRUE</code> se muestran, igualado a <code>FALSE</code> no</td>
-</tr>
-<tr class="odd">
-<td align="left"><code>include</code></td>
-<td align="left">Nos permite indicar si queremos incluir el codigo base en el documento final</td>
-</tr>
-</table>
+</article></slide><slide class=""><hgroup><h2>Funciones</h2></hgroup><article  id="funciones-2">
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks-2">
+<ul>
+<li><code>mean(x)</code>: calcula la media aritmética de las entradas del vector \(x\)</li>
+<li><code>diff(x)</code>: calcula el vector formado por las diferencias sucesivas entre entradas del vector original \(x\)</li>
+<li><code>cumsum(x)</code>: calcula el vector formado por las sumas acumuladas de las entradas del vector original \(x\)
 
-<div class="r-code">
-<p>```{r, echo=FALSE}</p>
+<ul>
+<li>Permite definir sucesiones descritas mediante sumatorios</li>
+<li>Cada entrada de <code>cumsum(x)</code> es la suma de las entradas de \(x\) hasta su posición</li>
+</ul></li>
+</ul>
 
-<p><code>sec = 10:20</code></p>
+</article></slide><slide class=""><hgroup><h2>Funciones</h2></hgroup><article  id="funciones-3">
 
-<p><code>sec</code></p>
+<pre class = 'prettyprint lang-r'>cuadrado = function(x){x^2}
+v = c(1,2,3,4,5,6)
+sapply(v, FUN = cuadrado)</pre>
 
-<p><code>cumsum(sec)</code></p>
+<pre >## [1]  1  4  9 16 25 36</pre>
 
-<p>```</p></div>
+<pre class = 'prettyprint lang-r'>mean(v)</pre>
 
+<pre >## [1] 3.5</pre>
 
+<pre class = 'prettyprint lang-r'>cumsum(v)</pre>
 
-<p>No aparece</p>
+<pre >## [1]  1  3  6 10 15 21</pre>
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks-3">
+</article></slide><slide class=""><hgroup><h2>Orden</h2></hgroup><article  id="orden">
 
-<div class="r-code">
-<p>```{r, echo=TRUE, message = TRUE}</p>
+<ul>
+<li><code>sort(x)</code>: ordena el vector en orden natural de los objetos que lo forman: el orden numérico creciente, orden alfabético…</li>
+<li><code>rev(x)</code>: invierte el orden de los elementos del vector \(x\)</li>
+</ul>
 
-<p><code>library(car)</code></p>
+<pre class = 'prettyprint lang-r'>v = c(1,7,5,2,4,6,3)
+sort(v)</pre>
 
-<p><code>head(cars,3)</code></p>
+<pre >## [1] 1 2 3 4 5 6 7</pre>
 
-<p>```</p></div>
+<pre class = 'prettyprint lang-r'>rev(v)</pre>
 
+<pre >## [1] 3 6 4 2 5 7 1</pre>
 
+</article></slide><slide class=""><hgroup><h2>Orden</h2></hgroup><article  id="orden-1" class="exercise">
 
-<pre class = 'prettyprint lang-r'>library(datasets)
-head(cars,3)</pre>
+<p><strong>Ejercicio</strong></p>
 
-<pre >##   speed dist
-## 1     4    2
-## 2     4   10
-## 3     7    4</pre>
+<ul>
+<li><p>Combinad las dos funciones anteriores, <code>sort</code> y <code>rev</code> para crear una función que dado un vector \(x\) os lo devuelva ordenado en orden decreciente.</p></li>
+<li><p>Razonad si aplicar primero <code>sort</code> y luego <code>rev</code> a un vector \(x\) daría en general el mismo resultado que aplicar primero <code>rev</code> y luego <code>sort</code>.</p></li>
+<li><p>Investigad la documentación de la función <code>sort</code> (recordad que podéis usar la sintaxis <code>?sort</code> en la consola) para leer si cambiando algún argumento de la misma podéis obtener el mismo resultado que habéis programado en el primer ejercicio.</p></li>
+</ul>
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks-4">
+</article></slide><slide class=""><hgroup><h2>Subvectores</h2></hgroup><article  id="subvectores">
 
-<div class="r-code">
-<p>```{r, echo=TRUE, message = FALSE, comment = NA}</p>
+<ul>
+<li><p><code>vector[i]</code>: da la \(i\)-ésima entrada del vector</p>
 
-<p><code>library(car)</code></p>
+<ul>
+<li>Los índices en R empiezan en 1</li>
+<li><code>vector[length(vector)]</code>: nos da la última entrada del vector</li>
+<li><code>vector[a:b]</code>: si \(a\) y \(b\) son dos números naturales, nos da el subvector con las entradas del vector original que van de la posición \(a\)-ésima hasta la \(b\)-ésima.</li>
+<li><code>vector[-i]</code>: si \(i\) es un número, este subvector está formado por todas las entradas del vector original menos la entrada \(i\)-ésima. Si \(i\) resulta ser un vector, entonces es un vector de índices y crea un nuevo vector con las entradas del vector original,cuyos índices pertenecen a \(i\)</li>
+<li><code>vector[-x]</code>: si \(x\) es un vector (de índices), entonces este es el complementario de vector[\(x\)]</li>
+</ul></li>
+</ul>
 
-<p><code>head(cars,3)</code></p>
+</article></slide><slide class=""><hgroup><h2>Subvectores</h2></hgroup><article  id="subvectores-1">
 
-<p>```</p></div>
+<ul>
+<li><p>También podemos utilizar operadores lógicos:</p>
 
+<ul>
+<li><code>==</code>: =</li>
+<li><code>!=</code>: \(\neq\)</li>
+<li><code>&gt;=</code>: \(\ge\)<br/></li>
+<li><code>&lt;=</code>: \(\le\)</li>
+<li><code>&lt;</code>: \(&lt;\)</li>
+<li><code>&gt;</code>: \(&gt;\)</li>
+<li><code>!</code>: NO lógico</li>
+<li><code>&amp;</code>: Y lógico</li>
+<li><code>|</code>: O lógico</li>
+</ul></li>
+</ul>
 
+</article></slide><slide class=""><hgroup><h2>Subvectores</h2></hgroup><article  id="subvectores-2">
 
-<pre class = 'prettyprint lang-r'>library(datasets)
-head(cars,3)</pre>
+<pre class = 'prettyprint lang-r'>v = c(14,5,6,19,32,0,8)
+v[2]</pre>
 
-<pre >  speed dist
-1     4    2
-2     4   10
-3     7    4</pre>
+<pre >## [1] 5</pre>
 
-<p>PD: <code>comment=NA</code> evita que aparezcan los <code>##</code></p>
+<pre class = 'prettyprint lang-r'>v[-c(3,5)]</pre>
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks-5">
+<pre >## [1] 14  5 19  0  8</pre>
 
-<table class = 'rmdtable'>
-<col width="13.698630%" />
-<col width="13.698630%" />
-<col width="72.602740%" />
-<tr class="header">
-<th align="left">Significado</th>
-<th align="left">Código</th>
-<th align="left">Resultado</th>
-</tr>
-<tr class="odd">
-<td align="left"><code>results</code></td>
-<td align="left"><code>markup</code></td>
-<td align="left">Valor por defecto. Nos muestra los resultados en el documento final línea a línea, encabezados por <code>##</code></td>
-</tr>
-<tr class="even">
-<td align="left"><code>results</code></td>
-<td align="left"><code>hide</code></td>
-<td align="left">No se nos muestra el resultado en el documento final</td>
-</tr>
-<tr class="odd">
-<td align="left"><code>results</code></td>
-<td align="left"><code>asis</code></td>
-<td align="left">Nos devuelve los resultados línea a línea de manera literal en el documento final y el programa con el que se abre el documento final los interpreta como texto y formatea adecuadamente</td>
-</tr>
-<tr class="even">
-<td align="left"><code>results</code></td>
-<td align="left"><code>hold</code></td>
-<td align="left">Muestra todos los resultados al final del bloque de código</td>
-</tr>
-</table>
+<pre class = 'prettyprint lang-r'>v[v != 19 &amp; v&gt;15]</pre>
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks-6">
+<pre >## [1] 32</pre>
 
-<div class="r-code">
-<p>```{r, echo=TRUE, results = &ldquo;markup&rdquo;}</p>
+</article></slide><slide class=""><hgroup><h2>Condicionales</h2></hgroup><article  id="condicionales">
 
-<p><code>sec = 10:20</code></p>
+<ul>
+<li><code>which(x cumple condición)</code>: para obtener los índices de las entradas del vector \(x\) que satisfacen la condición dada</li>
+<li><code>which.min(x)</code>: nos da la primera posición en la que el vector \(x\) toma su valor mínimo</li>
+<li><code>which(x==min(x))</code>: da todas las posiciones en las que el vector \(x\) toma sus valores mínimos</li>
+<li><code>which.max(x)</code>: nos da la primera posición en la que el vector \(x\) toma su valor máximo</li>
+<li><code>which(x==max(x))</code>: da todas las posiciones en las que el vector \(x\) toma sus valores máximos</li>
+</ul>
 
-<p><code>sec</code></p>
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Factores</h2></hgroup><article  id="factores">
 
-<p><code>cumsum(sec)</code></p>
+</article></slide><slide class=""><hgroup><h2>Factor</h2></hgroup><article  id="factor">
 
-<p>```</p></div>
+<p><l class="definition">Factor</l>: es como un vector, pero con una estructura interna más rica que permite usarlo para clasificar observaciones</p>
 
+<ul>
+<li><code>levels</code>: atributo del factor. Cada elemento del factor es igual a un nivel. Los niveles clasifican las entradas del factor. Se ordenan por orden alfabético</li>
+<li>Para definir un factor, primero hemos de definir un vector y trasformarlo por medio de una de las funciones <code>factor()</code> o <code>as.factor()</code>.</li>
+</ul>
 
+</article></slide><slide class=""><hgroup><h2>La función factor()</h2></hgroup><article  id="la-función-factor">
 
-<pre class = 'prettyprint lang-r'>sec = 10:20
-sec</pre>
+<ul>
+<li><p><code>factor(vector,levels=...)</code>: define un factor a partir del vector y dispone de algunos parámetros que permiten modificar el factor que se crea:</p>
 
-<pre >##  [1] 10 11 12 13 14 15 16 17 18 19 20</pre>
+<ul>
+<li><code>levels</code>: permite especificar los niveles e incluso añadir niveles que no aparecen en el vector</li>
+<li><code>labels</code>: permite cambiar los nombres de los niveles</li>
+</ul></li>
+<li><p><code>levels(factor)</code>: para obtener los niveles del factor</p></li>
+</ul>
 
-<pre class = 'prettyprint lang-r'>cumsum(sec)</pre>
+</article></slide><slide class=""><hgroup><h2>Factor ordenado</h2></hgroup><article  id="factor-ordenado">
 
-<pre >##  [1]  10  21  33  46  60  75  91 108 126 145 165</pre>
+<p><l class="definition">Factor ordenado.</l> Es un factor donde los niveles siguen un orden</p>
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks-7">
+<ul>
+<li><code>ordered(vector,levels=...)</code>: función que define un factor ordenado y tiene los mismos parámetros que factor</li>
+</ul>
 
-<div class="r-code">
-<p>```{r, echo=TRUE, results = &ldquo;hide&rdquo;}</p>
+</article></slide><slide class=""><hgroup><h2>Factores y factores ordenados</h2></hgroup><article  id="factores-y-factores-ordenados">
 
-<p><code>sec = 10:20</code></p>
+<pre class = 'prettyprint lang-r'>fac = factor(c(1,1,1,2,2,3,2,4,1,3,3,4,2,3,4,4), 
+       levels = c(1,2,3,4), labels = c(&quot;Sus&quot;,&quot;Apr&quot;,&quot;Not&quot;,&quot;Exc&quot;))
+fac</pre>
 
-<p><code>sec</code></p>
+<pre >##  [1] Sus Sus Sus Apr Apr Not Apr Exc Sus Not Not Exc Apr Not Exc Exc
+## Levels: Sus Apr Not Exc</pre>
 
-<p><code>cumsum(sec)</code></p>
+<pre class = 'prettyprint lang-r'>facOrd = ordered(c(1,1,1,2,2,3,2,4,1,3,3,4,2,3,4,4), 
+       levels = c(1,2,3,4), labels = c(&quot;Sus&quot;,&quot;Apr&quot;,&quot;Not&quot;,&quot;Exc&quot;))
+facOrd</pre>
 
-<p>```</p></div>
+<pre >##  [1] Sus Sus Sus Apr Apr Not Apr Exc Sus Not Not Exc Apr Not Exc Exc
+## Levels: Sus &lt; Apr &lt; Not &lt; Exc</pre>
 
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Lists</h2></hgroup><article  id="lists">
 
+</article></slide><slide class=""><hgroup><h2>List</h2></hgroup><article  id="list">
 
-<pre class = 'prettyprint lang-r'>sec = 10:20
-sec
-cumsum(sec)</pre>
+<p><l class="definition">List.</l> Lista formada por diferentes objetos, no necesariamente del mismo tipo, cada cual con un nombre interno</p>
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks-8">
+<ul>
+<li><code>list(...)</code>: función que crea una list
 
-<div class="r-code">
-<p>```{r, echo=TRUE, results = &ldquo;asis&rdquo;}</p>
+<ul>
+<li>Para obtener una componente concreta usamos la instrucción <code>list$componente</code></li>
+<li>También podemos indicar el objeto por su posición usando dobles corchetes: <code>list[[i]]</code>. Lo que obtendremos es una list formada por esa única componente, no el objeto que forma la componente</li>
+</ul></li>
+</ul>
 
-<p><code>sec = 10:20</code></p>
+</article></slide><slide class=""><hgroup><h2>Obtener información de una list</h2></hgroup><article  id="obtener-información-de-una-list">
 
-<p><code>sec</code></p>
+<ul>
+<li><code>str(list)</code>: para conocer la estructura interna de una list</li>
+<li><code>names(list)</code>: para saber los nombres de la list</li>
+</ul>
 
-<p><code>cumsum(sec)</code></p>
+</article></slide><slide class=""><hgroup><h2>Obtener información de una list</h2></hgroup><article  id="obtener-información-de-una-list-1">
 
-<p>```</p></div>
+<pre class = 'prettyprint lang-r'>x = c(1,-2,3,4,-5,6,7,-8,-9,0)
+miLista = list(nombre = &quot;X&quot;, vector = x, media = mean(x), sumas = cumsum(x))
+miLista</pre>
 
+<pre >## $nombre
+## [1] &quot;X&quot;
+## 
+## $vector
+##  [1]  1 -2  3  4 -5  6  7 -8 -9  0
+## 
+## $media
+## [1] -0.3
+## 
+## $sumas
+##  [1]  1 -1  2  6  1  7 14  6 -3 -3</pre>
 
+</article></slide><slide class=""><hgroup><h2>Obtener información de una list</h2></hgroup><article  id="obtener-información-de-una-list-2">
 
-<pre class = 'prettyprint lang-r'>sec = 10:20
-sec</pre>
+<pre class = 'prettyprint lang-r'>str(miLista)</pre>
 
-<p>[1] 10 11 12 13 14 15 16 17 18 19 20</p>
+<pre >## List of 4
+##  $ nombre: chr &quot;X&quot;
+##  $ vector: num [1:10] 1 -2 3 4 -5 6 7 -8 -9 0
+##  $ media : num -0.3
+##  $ sumas : num [1:10] 1 -1 2 6 1 7 14 6 -3 -3</pre>
 
-<pre class = 'prettyprint lang-r'>cumsum(sec)</pre>
+<pre class = 'prettyprint lang-r'>names(miLista)</pre>
 
-<p>[1] 10 21 33 46 60 75 91 108 126 145 165</p>
+<pre >## [1] &quot;nombre&quot; &quot;vector&quot; &quot;media&quot;  &quot;sumas&quot;</pre>
 
-</article></slide><slide class=""><hgroup><h2>Parámetros de los chunks</h2></hgroup><article  id="parámetros-de-los-chunks-9">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Matrices</h2></hgroup><article  id="matrices">
 
-<div class="r-code">
-<p>```{r, echo=TRUE, results = &ldquo;hold&rdquo;}</p>
+</article></slide><slide class=""><hgroup><h2>Cómo definirlas</h2></hgroup><article  id="cómo-definirlas">
 
-<p><code>sec = 10:20</code></p>
+<ul>
+<li><code>matrix(vector, nrow=n, byrow=valor_lógico)</code>: para definir una matriz de \(n\) filas formada por las entradas del vector
 
-<p><code>sec</code></p>
+<ul>
+<li><code>nrow</code>: número de filas</li>
+<li><code>byrow</code>: si se iguala a TRUE, la matriz se construye por filas; si se iguala a FALSE (valor por defecto), se construye por columnas. -<code>ncol</code>: número de columnas (puede usarse en lugar de nrow)</li>
+<li>R muestra las matrices indicando como [\(i,\)] la fila \(i\)-ésima y [\(,j\)] la columna \(j\)-ésima</li>
+<li>Todas las entradas de una matriz han de ser del mismo tipo de datos</li>
+</ul></li>
+</ul>
 
-<p><code>cumsum(sec)</code></p>
+</article></slide><slide class=""><hgroup><h2>Cómo definirlas</h2></hgroup><article  id="cómo-definirlas-1" class="exercise">
 
-<p>```</p></div>
+<p><strong>Ejercicio</strong></p>
 
+<ul>
+<li><p>¿Cómo definirías una matriz constante? Es decir, ¿cómo definirías una matriz \(A\) tal que \(\forall\  i=1,...,n; j = 1,...,m\), \(a_{i,j}=k\) siendo \(k\in\mathbb{R}\)? Como R no admite incógnitas, prueba para el caso específico \(n = 3, m = 5, k = 0\) <!-- matrix(0, nrow = 3, ncol = 5)--></p></li>
+<li><p>Con el vector vec = (1,2,3,4,5,6,7,8,9,10,11,12) crea la matriz \[\begin{pmatrix}
+1 &amp; 4 &amp; 7 &amp; 10\\
+2 &amp; 5 &amp; 8 &amp; 11\\
+3 &amp; 6 &amp; 9 &amp; 12
+\end{pmatrix}\] <!--matrix(vec, ncol = 4)--></p></li>
+</ul>
 
+</article></slide><slide class=""><hgroup><h2>Respuesta</h2></hgroup><article  id="respuesta" class="exercise">
 
-<pre class = 'prettyprint lang-r'>sec = 10:20
-sec
-cumsum(sec)</pre>
+<pre >A &lt;- matrix(c(rep(0,15)),ncol=5)
+A
+B &lt;- matrix(c(1,2,3,4,5,6,7,8,9,10,11,12),ncol=4)
+B</pre>
 
-<pre >##  [1] 10 11 12 13 14 15 16 17 18 19 20
-##  [1]  10  21  33  46  60  75  91 108 126 145 165</pre>
+</article></slide><slide class=""><hgroup><h2>Respuesta</h2></hgroup><article  id="respuesta-1">
 
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Los chunks en modo línea</h2></hgroup><article  id="los-chunks-en-modo-línea">
+<pre class = 'prettyprint lang-r'>A &lt;- matrix(c(rep(0,15)),ncol=5)
+A</pre>
 
-</article></slide><slide class=""><hgroup><h2>Los chunks en modo línea</h2></hgroup><article  id="los-chunks-en-modo-línea-1">
+<pre >##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    0    0    0    0    0
+## [2,]    0    0    0    0    0
+## [3,]    0    0    0    0    0</pre>
 
-<p>Con lo explicado hasta ahora, solamente hemos generado resultados en la línea aparte</p>
+<pre class = 'prettyprint lang-r'>B &lt;- matrix(c(1,2,3,4,5,6,7,8,9,10,11,12),ncol=4)
+B</pre>
 
-<p>Para introducir una parte de código dentro de un párrafo y que se ejecute al comilarse el documento mostrando así el resultado final, hay que hacerlo utilizando <code>`r ...`</code></p>
+<pre >##      [,1] [,2] [,3] [,4]
+## [1,]    1    4    7   10
+## [2,]    2    5    8   11
+## [3,]    3    6    9   12</pre>
+
+</article></slide><slide class=""><hgroup><h2>Cómo construirlas</h2></hgroup><article  id="cómo-construirlas">
+
+<ul>
+<li><code>rbind(vector1, vector2, ...)</code>: construye la matriz de filas vector1, vector2,…</li>
+<li><code>cbind(vector1, vector2, ...)</code>: construye la matriz de columnas vector1, vector2,…
+
+<ul>
+<li>Los vectores han de tener la misma longitud</li>
+<li>También sirve para añadir columnas (filas) a una matriz o concatenar por columnas (filas) matrices con el mismo número de filas (columnas)</li>
+</ul></li>
+<li><code>diag(vector)</code>: para construir una matriz diagonal con un vector dado
+
+<ul>
+<li>Si aplicamos diag a un número \(n\), produce una matriz identidad de orden \(n\)</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Submatrices</h2></hgroup><article  id="submatrices">
+
+<ul>
+<li><code>matriz[i,j]</code>: indica la entrada (\(i,j\)) de la matriz, siendo \(i,j\in\mathbb{N}\). Si \(i\) y \(j\) son vectores de índices, estaremos definiendo la submatriz con las filas pertenecientes al vector \(i\) y columnas pertenecientes al vector \(j\)</li>
+<li><code>matriz[i,]</code>: indica la fila \(i\)-ésima de la matriz, siendo \(i\in\mathbb{N}\)</li>
+<li><code>matriz[,j]</code>: indica la columna \(j\)-ésima de la siendo \(j\in\mathbb{N}\)
+
+<ul>
+<li>Si \(i\) (\(j\)) es un vector de índices, estaremos definiendo la submatriz con las filas (columnas) pertenecientes al vector \(i\) (\(j\))</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Funciones</h2></hgroup><article  id="funciones-4">
+
+<ul>
+<li><code>diag(matriz)</code>: para obtener la diagonal de la matriz</li>
+<li><code>nrow(matriz)</code>: nos devuelve el número de filas de la matriz</li>
+<li><code>ncol(matriz)</code>: nos devuelve el número de columnas de la matriz</li>
+<li><code>dim(matriz)</code>: nos devuelve las dimensiones de la matriz</li>
+<li><code>sum(matriz)</code>: obtenemos la suma de todas las entradas de la matriz</li>
+<li><code>prod(matriz)</code>: obtenemos el producto de todas las entradas de la matriz</li>
+<li><code>mean(matriz)</code>: obtenemos la media aritmética de todas las entradas de la matriz</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Funciones</h2></hgroup><article  id="funciones-5">
+
+<ul>
+<li><code>colSums(matriz)</code>: obtenemos las sumas por columnas de la matriz</li>
+<li><code>rowSums(matriz)</code>: obtenemos las sumas por filas de la matriz</li>
+<li><code>colMeans(matriz)</code>: obtenemos las medias aritméticas por columnas de la matriz</li>
+<li><code>rowMeans(matriz)</code>: obtenemos las medias aritméticas por filas de la matriz</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Funciones</h2></hgroup><article  id="funciones-6">
 
 <div class="example">
 <p><strong>Ejemplo</strong></p>
 
-<p>La raíz cuadrada de 64 es <code>`r sqrt(64)`</code> o, lo que viene siendo lo mismo, \(\sqrt{64}=\)<code>`r sqrt(64)`</code></p>
+<p>Dada la matriz \[A = \begin{pmatrix}
+1 &amp; 4 &amp; 7\\
+2 &amp; 5 &amp; 8\\
+3 &amp; 6 &amp; 9
+\end{pmatrix}\]</p></div>
 
-<p>La raíz quinta de 32 es 8 o, lo que viene siendo lo mismo, \(\sqrt{64}=\) 5.6568542</p></div></article></slide>
+<pre class = 'prettyprint lang-r'>A = matrix(c(1,2,3,4,5,6,7,8,9), ncol = 3)
+dim(A)</pre>
+
+<pre >## [1] 3 3</pre>
+
+<pre class = 'prettyprint lang-r'>diag(A)</pre>
+
+<pre >## [1] 1 5 9</pre>
+
+</article></slide><slide class=""><hgroup><h2>Función apply()</h2></hgroup><article  id="función-apply">
+
+<ul>
+<li><code>apply(matriz, MARGIN=..., FUN=función)</code>: para aplicar otras funciones a las filas o las columnas de una matriz
+
+<ul>
+<li><code>MARGIN</code>: ha de ser 1 si queremos aplicar la función por filas; 2 si queremos aplicarla por columnas; o c(1,2) si la queremos aplicar a cada entrada</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Función apply()</h2></hgroup><article  id="función-apply-1">
+
+<pre class = 'prettyprint lang-r'>apply(A, MARGIN = c(1,2), FUN = cuadrado)</pre>
+
+<pre >##      [,1] [,2] [,3]
+## [1,]    1   16   49
+## [2,]    4   25   64
+## [3,]    9   36   81</pre>
+
+<pre class = 'prettyprint lang-r'>apply(A, MARGIN = 1, FUN = sum)</pre>
+
+<pre >## [1] 12 15 18</pre>
+
+<pre class = 'prettyprint lang-r'>apply(A, MARGIN = 2, FUN = sum)</pre>
+
+<pre >## [1]  6 15 24</pre>
+
+</article></slide><slide class=""><hgroup><h2>Operaciones</h2></hgroup><article  id="operaciones">
+
+<ul>
+<li><code>t(matriz)</code>: para obtener la transpuesta de la matriz</li>
+<li><code>+</code>: para sumar matrices</li>
+<li><code>*</code>: para el producto de un escalar por una matriz</li>
+<li><code>%*%</code>: para multiplicar matrices</li>
+<li><code>mtx.exp(matriz,n)</code>: para elevar la matriz a \(n\)
+
+<ul>
+<li>Del paquete <code>Biodem</code>
+
+<ul>
+<li>No calcula las potencias exactas, las aproxima</li>
+</ul></li>
+</ul></li>
+<li><code>%^%</code>: para elevar matrices
+
+<ul>
+<li>Del paquete <code>expm</code>
+
+<ul>
+<li>No calcula las potencias exactas, las aproxima</li>
+</ul></li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Operaciones</h2></hgroup><article  id="operaciones-1" class="exercise">
+
+<p><strong>Ejercicio</strong></p>
+
+<p>Observad qué ocurre si, siendo \(A = \begin{pmatrix}
+2 &amp; 0 &amp; 2\\
+1 &amp; 2 &amp; 3\\
+0 &amp; 1 &amp; 3
+\end{pmatrix}\) y \(B = \begin{pmatrix}
+3 &amp; 2 &amp; 1\\
+1 &amp; 0 &amp; 0\\
+1 &amp; 1 &amp; 1
+\end{pmatrix}\), realizamos las operaciones \(A*B\), \(A^2\) y \(B^3\)</p>
+
+</article></slide><slide class=""><hgroup><h2>Operaciones</h2></hgroup><article  id="operaciones-2">
+
+<ul>
+<li><code>det(matriz)</code>: para calcular el determinante de la matriz</li>
+<li><code>qr(matriz)$rank</code>: para calcular el rango de la matriz</li>
+<li><code>solve(matriz)</code>: para calcular la inversa de una matriz invertible
+
+<ul>
+<li>También sirve para resolver sistemas de ecuaciones lineales. Para ello introducimos <code>solve(matriz,b)</code>, donde \(b\) es el vector de términos independientes</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Valores y vectores propios</h2></hgroup><article  id="valores-y-vectores-propios">
+
+<p><a href='https://es.wikipedia.org/wiki/Vector_propio_y_valor_propio' title=''>Vector propio y valor propio</a></p>
+
+<ul>
+<li><code>eigen(matriz)</code>: para calcular los valores (vaps) y vectores propios (veps)
+
+<ul>
+<li><code>eigen(matriz)$values</code>: nos da el vector con los vaps de la matriz en orden decreciente de su valor absoluto y repetidos tantas veces como su multiplicidad algebraica.</li>
+<li><code>eigen(matriz)$vectors</code>: nos da una matriz cuyas columnas son los veps de la matriz.</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Valores y vectores propios</h2></hgroup><article  id="valores-y-vectores-propios-1">
+
+<pre class = 'prettyprint lang-r'>M = rbind(c(2,6,-8), c(0,6,-3), c(0,2,1))
+eigen(M)</pre>
+
+<pre >## eigen() decomposition
+## $values
+## [1] 4 3 2
+## 
+## $vectors
+##           [,1]       [,2] [,3]
+## [1,] 0.2672612 -0.8164966    1
+## [2,] 0.8017837  0.4082483    0
+## [3,] 0.5345225  0.4082483    0</pre>
+
+</article></slide><slide class=""><hgroup><h2>Valores y vectores propios</h2></hgroup><article  id="valores-y-vectores-propios-2">
+
+<p>Si hay algún vap con multiplicidad algebraica mayor que 1 (es decir, que aparece más de una vez), la función <code>eigen()</code> da tantos valores de este vap como su multiplicidad algebraica indica. Además, en este caso, R intenta que los veps asociados a cada uno de estos vaps sean <a href='https://es.wikipedia.org/wiki/Dependencia_e_independencia_lineal' title=''>linealmente independientes</a>. Por tanto, cuando como resultado obtenemos veps repetidos asociados a un vap de multiplicidad algebraica mayor que 1, es porque para este vap no existen tantos veps linealmente independientes como su multiplicidad algebraica y, por consiguiente, la matriz no es <a href='https://es.wikipedia.org/wiki/Matriz_diagonalizable' title=''>diagonalizable</a>.</p>
+
+</article></slide><slide class=""><hgroup><h2>Valores y vectores propios</h2></hgroup><article  id="valores-y-vectores-propios-3">
+
+<pre class = 'prettyprint lang-r'>M = matrix(c(0,1,0,-7,3,-1,16,-3,4), nrow=3, byrow=TRUE)
+eigen(M)</pre>
+
+<pre >## eigen() decomposition
+## $values
+## [1] 3 2 2
+## 
+## $vectors
+##            [,1]       [,2]       [,3]
+## [1,] -0.1301889 -0.1825742 -0.1825742
+## [2,] -0.3905667 -0.3651484 -0.3651484
+## [3,]  0.9113224  0.9128709  0.9128709</pre></article></slide>
 
 
   <slide class="backdrop"></slide>

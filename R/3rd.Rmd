@@ -1,0 +1,12 @@
+---
+title: "Representacion Grafica"
+author: "R Markdown"
+date: "`r Sys.Date()`"
+output:
+  ioslides_presentation:
+    widescreen: true
+    css: Rmd CSS.css
+    logo: img/LogoRStudio.png
+---
+
+# XD
