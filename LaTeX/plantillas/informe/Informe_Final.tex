@@ -3,13 +3,16 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{listings}
-\usepackage{xcolor}
-
+\usepackage{graphicx}
+\usepackage[a4paper, left = 3cm, right = 3cm, top =2cm]{geometry}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-
+\definecolor{crimson}{HTML}{DC1420}
+\definecolor{customGreen}{HTML}{228B22}
+\definecolor{marron}{HTML}{804000}
+\definecolor{orange}{HTML}{FFA500}
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
     commentstyle=\color{codegreen},
@@ -28,28 +31,48 @@
     showtabs=false,                  
     tabsize=2
 }
+\lstset{keepspaces=true, style=mystyle}
 
-\lstset{style=mystyle}
-\usepackage[a4paper, left = 3cm, right = 3cm, top =2cm]{geometry}
-\title{\textbf{\underline{Proyecto de Matemática Numérica}} \\ \textit{Predicción de crecimiento demográfico.} \\ \textit{Informe \#2}}
-\author{Luis Ernesto Serras Rimada \\ Guillermo Cepero García \\ Miguel Vadim Vilariño Pedraza}
-
+\title{\textcolor{crimson}{\Large{\textbf{Proyecto Final de Análisis Exploratorio de Datos}}} \\ \normalsize{\textit{Facultad de Matemática y Computación}} \\\normalsize{\textit{Ciencia de Datos \\ Grupo D111}}\\ \textcolor{customGreen}{\large{\textit{Dataset: Trees.}}}} 
+\author{\textcolor{marron}{\normalsize{Guillermo Cepero García}} \\ \textcolor{marron}{\normalsize{Luis Ernesto Serras Rimada}} \\ \textcolor{marron}{\normalsize{Miguel Vadim Vilariño Pedraza}}}
 \date{\today}
 \begin{document}
+\begin{titlepage}
+    \begin{center}
+    {\includegraphics[width=0.15\textwidth]{img/matcom.jpg}\par} %Logo matcom con presentacion del informe
+    \vspace{0.1cm}
+    {\bfseries\LARGE Ciencia de Datos \par}
+    \vspace{0.2cm}
+    {\scshape\Large  Facultad de Matamática y Computación\par}
+    \vspace{0.6cm}
+    {\scshape\Huge{\textbf{Asignatura \\ Proyecto Final}} \par}
+    \vspace{0.2cm}
+    {\itshape\Large {\large{\textit{Dataset: Trees.}} \par}
+    \vspace{0.8cm}
+    {\large {Integrantes:} \\ \normalsize{Nombre 1} \\ \normalsize{Nombre 2} \\ \normalsize{Nombre 3} \par}
+    \vspace{0.5cm}
+    {\includegraphics[width=0.85\textwidth]{img/imagen del tale.jpeg}}
+    \end{center}
+\end{titlepage}
+
+\newpage		%Con \newpage pasas de pagina
+\tableofcontents
+\lstlistoflistings
+\newpage
 \maketitle
     Informe Plantilla
-    \tableofcontents
-    \lstlistoflistings
+    \tableofcontents 	%enlaces de secciones, subsecciones y de codigos
+    \lstlistoflistings	
     Introduccion
 \newpage
-\section{Desarrollo}
+\section{Desarrollo}	%secciones
 Desarrollo\\
-\begin{center}
-\includegraphics[height = 15cm]{img/cuba3.jpeg}
+\begin{center} 	%centrado
+\includegraphics[height = 15cm]{img/imagen.jpeg} %insertar imagenes
 \end{center}
 \newpage
 \subsection{Code}
-\begin{lstlisting}[language=Python, caption=Python example]
+\begin{lstlisting}[language=Python, caption=Python example]	%Codigo
     import numpy as np
         
     def incmatrix(genl1,genl2):
@@ -80,15 +103,18 @@ Desarrollo\\
         
         return M
     \end{lstlisting}
-\clearpage
+\clearpage	%se usa esto para pasar a la penultima pagina
 
 \section{Conclusiones}
+\subsection{A}	%subsecciones
 
-\cleardoublepage
-\section{Referencias}
-\url{https://github.com/LFrench03/Modelo-de-Crecimiento-Poblacional/blob/main/data/csv/poblacion-residente.csv}
+\cleardoublepage	%se usa esto para la pagina final
+
+\section{Referencias}	%referencias
+\url{https://github.com/LFrench03/Modelo-de-Crecimiento-Poblacional/blob/main/data/csv/poblacion-residente.csv}	%enlace con \url
 \\\textit{\textbf{\underline{Referencias}}:}
-\begin{itemize}
+
+\begin{itemize}	%listas
     \item (1)
 \end{itemize}
 
