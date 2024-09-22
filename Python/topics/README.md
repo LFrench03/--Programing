@@ -1,0 +1,13 @@
+# Index:
+- [1-First Steps](1-First_Steps)
+- [2-Basic data structures](2-Basic_Data_Structures)
+- [3-Functions](3-Functions)
+- [4-Regular Expressions](4-RegularExpresions)
+- [5-Recursividad](5-Recursion)
+- [6-Object Oriented Programing](6-OOP)
+- [7-Some of databases](7-Jsons,CSV&SQL)
+- [8-Modules](8-Working_with_data)
+- [9-Streamlit](9-Streamlit)
+- [10-Scripts](10-Scripts)
+- [11-Errors and exceptions](11-Errors&Exceptions)
+- [12-Web Scrapping](12-WebScraping)

@@ -1,7 +1,12 @@
-## Python stufs👍
+# Python stufs👍
+---
+**Here you'll see some of my own materials used to learn python from the beggining. Exercises, theory, examples, tests, etc...**
 
-<r>
 
-Here you'll see some theory, exercises, , librarys, algorythms and other cool stufs with python:
+## Contents:
+---
+- [Tests](tests)
 
-![](IMG/logo_pythonwhite.png)
+- [Topics](topics)
+
+![](IMG/python.jpg)
