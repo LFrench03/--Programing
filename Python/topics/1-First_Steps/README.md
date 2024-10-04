@@ -8,3 +8,5 @@
 - **Condicionales**([click_here](3-Condionales.ipynb))
 
 - **Bucles**([click_here](4-Bucles.ipynb))
+
+**Plus: [Strings Theory](strings_theory.ipynb)**
